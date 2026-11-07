@@ -1,0 +1,6 @@
+numpy>=1.26
+matplotlib>=3.8
+pytest>=8
+# Optional, for the LLM classifier (install one):
+# anthropic>=0.40
+# openai>=1.40

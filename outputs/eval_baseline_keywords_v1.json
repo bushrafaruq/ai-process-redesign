@@ -1,0 +1,329 @@
+{
+  "model": "baseline-keywords-v1",
+  "n": 80,
+  "confidence_threshold": 0.6,
+  "category_accuracy": 0.887,
+  "category_macro_f1": 0.885,
+  "priority_accuracy": 0.662,
+  "p1_recall": 0.692,
+  "p1_count": 13,
+  "safety_escalation_recall": 0.727,
+  "over_escalated_to_p1": 3,
+  "review_mode_share": {
+    "ESCALATE_NOW": 0.15,
+    "FULL_REVIEW": 0.125,
+    "QUICK_APPROVE": 0.725
+  },
+  "quick_approve_precision": 0.983,
+  "llm_fallbacks": 0,
+  "per_class": {
+    "maintenance_plumbing": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 9
+    },
+    "maintenance_general": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.889,
+      "support": 12
+    },
+    "heating_hvac": {
+      "precision": 1.0,
+      "recall": 0.714,
+      "f1": 0.833,
+      "support": 7
+    },
+    "access_keys": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.857,
+      "support": 8
+    },
+    "billing_payments": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 8
+    },
+    "noise_conduct": {
+      "precision": 0.833,
+      "recall": 1.0,
+      "f1": 0.909,
+      "support": 5
+    },
+    "cleaning_waste": {
+      "precision": 1.0,
+      "recall": 0.833,
+      "f1": 0.909,
+      "support": 6
+    },
+    "internet_wifi": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6
+    },
+    "move_in_out": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 5
+    },
+    "general_enquiry": {
+      "precision": 0.429,
+      "recall": 1.0,
+      "f1": 0.6,
+      "support": 3
+    },
+    "safety_security": {
+      "precision": 0.875,
+      "recall": 0.636,
+      "f1": 0.737,
+      "support": 11
+    }
+  },
+  "errors": [
+    {
+      "id": "T001",
+      "text": "Hi, the toilet in my ensuite keeps running and won't stop filling. Room 214.",
+      "true": "maintenance_plumbing/P2",
+      "pred": "maintenance_plumbing/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T012",
+      "text": "Fridge in our flat is warm, all our food is going off.",
+      "true": "maintenance_general/P2",
+      "pred": "maintenance_general/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T017",
+      "text": "There's black mould growing around my window, I think from condensation.",
+      "true": "heating_hvac/P3",
+      "pred": "maintenance_general/P3",
+      "conf": 0.1,
+      "mode": "FULL_REVIEW"
+    },
+    {
+      "id": "T019",
+      "text": "Extractor in the bathroom isn't pulling any air, mirror stays steamed for an hour",
+      "true": "heating_hvac/P3",
+      "pred": "general_enquiry/P3",
+      "conf": 0.0,
+      "mode": "FULL_REVIEW"
+    },
+    {
+      "id": "T021",
+      "text": "Lost my key card on the bus, need a replacement please",
+      "true": "access_keys/P2",
+      "pred": "access_keys/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T022",
+      "text": "My fob stopped working on the main entrance but works on my bedroom door",
+      "true": "access_keys/P2",
+      "pred": "access_keys/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T024",
+      "text": "The bike shed lock is jammed, nobody can get their bikes out",
+      "true": "access_keys/P2",
+      "pred": "access_keys/P3",
+      "conf": 0.65,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T028",
+      "text": "My direct debit failed because I changed banks, new IBAN IE29 AIBK 9311 5212 3456 78. How do I update it?",
+      "true": "billing_payments/P2",
+      "pred": "billing_payments/P3",
+      "conf": 0.8,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T030",
+      "text": "When will I get my deposit back? I moved out 6 weeks ago.",
+      "true": "billing_payments/P2",
+      "pred": "billing_payments/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T034",
+      "text": "There is a party going on right now in the common room, it's 2am and very noisy",
+      "true": "noise_conduct/P2",
+      "pred": "noise_conduct/P3",
+      "conf": 0.95,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T035",
+      "text": "The guy next door is shouting at his girlfriend and banging on the walls, I'm worried for her",
+      "true": "safety_security/P1",
+      "pred": "noise_conduct/P3",
+      "conf": 0.7,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T037",
+      "text": "I saw a mouse in our kitchen last night, ran under the fridge",
+      "true": "cleaning_waste/P2",
+      "pred": "maintenance_general/P3",
+      "conf": 0.15,
+      "mode": "FULL_REVIEW"
+    },
+    {
+      "id": "T041",
+      "text": "Wifi keeps dropping every 10 minutes in my room, I can't do my online classes",
+      "true": "internet_wifi/P2",
+      "pred": "internet_wifi/P3",
+      "conf": 0.85,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T053",
+      "text": "A man I don't know followed me in through the main door and is wandering the corridors",
+      "true": "safety_security/P1",
+      "pred": "general_enquiry/P3",
+      "conf": 0.0,
+      "mode": "FULL_REVIEW"
+    },
+    {
+      "id": "T054",
+      "text": "My bike was stolen from the shed even though it was locked",
+      "true": "safety_security/P2",
+      "pred": "safety_security/P1",
+      "conf": 0.75,
+      "mode": "ESCALATE_NOW"
+    },
+    {
+      "id": "T056",
+      "text": "Smoke alarm in my room beeps every minute, I think the battery is low",
+      "true": "safety_security/P2",
+      "pred": "safety_security/P1",
+      "conf": 0.75,
+      "mode": "ESCALATE_NOW"
+    },
+    {
+      "id": "T060",
+      "text": "The lift is stuck on the 4th floor and has been for an hour",
+      "true": "maintenance_general/P2",
+      "pred": "maintenance_general/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T061",
+      "text": "The study room door won't open with my card anymore",
+      "true": "access_keys/P2",
+      "pred": "access_keys/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T064",
+      "text": "My room is so cold I'm sleeping in a jacket, the heater does nothing",
+      "true": "heating_hvac/P2",
+      "pred": "heating_hvac/P3",
+      "conf": 0.85,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T066",
+      "text": "Can't log in to the wifi portal, it says my account is expired",
+      "true": "internet_wifi/P2",
+      "pred": "internet_wifi/P3",
+      "conf": 0.8,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T067",
+      "text": "My key broke in the lock and half of it is stuck inside",
+      "true": "access_keys/P2",
+      "pred": "safety_security/P1",
+      "conf": 0.2,
+      "mode": "ESCALATE_NOW"
+    },
+    {
+      "id": "T068",
+      "text": "Cockroaches in the shared bathroom on floor 1",
+      "true": "cleaning_waste/P2",
+      "pred": "cleaning_waste/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T069",
+      "text": "The front door to the building doesn't close fully, anyone could walk in",
+      "true": "safety_security/P2",
+      "pred": "general_enquiry/P3",
+      "conf": 0.0,
+      "mode": "FULL_REVIEW"
+    },
+    {
+      "id": "T070",
+      "text": "Hey my friend is staying over tonight, do I need to register them?",
+      "true": "general_enquiry/P3",
+      "pred": "general_enquiry/P2",
+      "conf": 0.8,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T071",
+      "text": "Toilet is overflowing onto the floor and won't stop",
+      "true": "maintenance_plumbing/P1",
+      "pred": "maintenance_plumbing/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T075",
+      "text": "Hot water runs out after 2 minutes in the morning",
+      "true": "heating_hvac/P2",
+      "pred": "heating_hvac/P3",
+      "conf": 0.75,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T076",
+      "text": "I'd like to give feedback, the reception staff were really helpful today!",
+      "true": "general_enquiry/P3",
+      "pred": "general_enquiry/P2",
+      "conf": 0.7,
+      "mode": "QUICK_APPROVE"
+    },
+    {
+      "id": "T077",
+      "text": "The microwave in kitchen B smells of burning plastic when it's on",
+      "true": "safety_security/P1",
+      "pred": "maintenance_general/P1",
+      "conf": 0.55,
+      "mode": "ESCALATE_NOW"
+    },
+    {
+      "id": "T079",
+      "text": "The car park barrier isn't lifting for residents",
+      "true": "access_keys/P2",
+      "pred": "general_enquiry/P3",
+      "conf": 0.0,
+      "mode": "FULL_REVIEW"
+    },
+    {
+      "id": "T080",
+      "text": "My ceiling light fell down, the wires are hanging out",
+      "true": "maintenance_general/P1",
+      "pred": "maintenance_general/P3",
+      "conf": 0.85,
+      "mode": "QUICK_APPROVE"
+    }
+  ]
+}

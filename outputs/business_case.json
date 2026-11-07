@@ -1,0 +1,42 @@
+{
+  "source_eval_model": "baseline-keywords-v1",
+  "current_hours_per_month": 156.0,
+  "future_hours_per_month": 64.0,
+  "current_triage_min_per_request": 4.0,
+  "future_triage_min_per_request": 1.46,
+  "current_misroute_pct": 18.2,
+  "future_misroute_pct": 5.6,
+  "chaser_pct_now": 28.9,
+  "chaser_pct_future": 18.8,
+  "p1_minutes_to_triage_future_target": 10,
+  "one_off_build_cost_eur": 11000.0,
+  "scenarios": {
+    "low": {
+      "hours_saved_per_month": 55.0,
+      "fte_equivalent": 0.37,
+      "gross_value_per_year_eur": 19800.0,
+      "run_cost_per_year_eur": 6200.0,
+      "net_value_per_year_eur": 13600.0,
+      "payback_months": 9.7,
+      "three_year_net_eur": 29700.0
+    },
+    "base": {
+      "hours_saved_per_month": 92.0,
+      "fte_equivalent": 0.61,
+      "gross_value_per_year_eur": 33000.0,
+      "run_cost_per_year_eur": 6200.0,
+      "net_value_per_year_eur": 26800.0,
+      "payback_months": 4.9,
+      "three_year_net_eur": 69400.0
+    },
+    "high": {
+      "hours_saved_per_month": 115.0,
+      "fte_equivalent": 0.76,
+      "gross_value_per_year_eur": 41300.0,
+      "run_cost_per_year_eur": 6200.0,
+      "net_value_per_year_eur": 35000.0,
+      "payback_months": 3.8,
+      "three_year_net_eur": 94100.0
+    }
+  }
+}

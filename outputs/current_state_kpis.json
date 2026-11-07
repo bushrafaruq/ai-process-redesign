@@ -1,0 +1,15 @@
+{
+  "requests_total": 7894,
+  "requests_per_month": 1319,
+  "median_minutes_to_triage": 48.0,
+  "p90_minutes_to_triage": 647.0,
+  "p1_median_minutes_to_triage": 42.0,
+  "p1_via_inbox_median_minutes": 78.0,
+  "p1_via_inbox_over_60_min_pct": 63.7,
+  "misrouted_pct": 18.2,
+  "priority_inconsistent_pct": 25.4,
+  "chased_pct": 28.9,
+  "coordinator_triage_hours_per_month": 156.0,
+  "share_received_out_of_hours_pct": 30.0,
+  "share_inbox_channels_pct": 69.9
+}

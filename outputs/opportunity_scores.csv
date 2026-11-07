@@ -1,0 +1,9 @@
+opportunity,value,feasibility,data_readiness,risk_low_is_5,adoption,weighted_score,note,wave
+Instant acknowledgement with expected response time,3,5,5,5,5,4.4,Simple template; cuts resident chasers,Wave 1 (now)
+AI triage & routing with human approval,5,4,4,4,4,4.3,Biggest pain point; human approval keeps risk low,Wave 1 (now)
+Automated weekly KPI report,3,5,4,5,4,4.1,Uses the structured data triage creates,Wave 1 (now)
+Duplicate / same-issue detection,3,3,3,4,4,3.35,Needs a few weeks of structured data first,Wave 2 (3-6 months)
+Predictive maintenance from repeat faults,4,2,1,4,3,3.0,High value later; no asset-level history yet,Wave 2 (3-6 months)
+Sentiment and complaint escalation,2,4,3,3,3,2.9,Useful but secondary to getting routing right,Not now
+Resident self-service FAQ assistant,3,3,2,3,3,2.85,Needs a maintained knowledge base; answer-quality risk,Not now
+Fully autonomous resolution (AI books contractors),4,2,2,1,2,2.4,Spend and safety decisions without a person: not now,Not now

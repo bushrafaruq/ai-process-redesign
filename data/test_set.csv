@@ -1,0 +1,81 @@
+id,text,category,priority
+T001,"Hi, the toilet in my ensuite keeps running and won't stop filling. Room 214.",maintenance_plumbing,P2
+T002,"There's water coming through the ceiling in the kitchen on floor 3, it's pouring onto the floor!!",maintenance_plumbing,P1
+T003,"My shower drain is really slow, water builds up to my ankles. Not urgent but annoying.",maintenance_plumbing,P2
+T004,"The tap in the shared kitchen drips all the time, can someone have a look when free?",maintenance_plumbing,P3
+T005,"Sink in my room is completely blocked and smells. Can you send someone?",maintenance_plumbing,P2
+T006,"Water pressure in apartment 5B has been weak for a week.",maintenance_plumbing,P3
+T007,"One of the sockets beside my desk doesn't work, I have to use the one by the bed.",maintenance_general,P3
+T008,"The oven in kitchen C won't turn on at all, six of us share it.",maintenance_general,P2
+T009,"Light in the corridor outside 312 is flickering.",maintenance_general,P3
+T010,"I saw sparks from the plug when I plugged in my kettle and now there's a burning smell",safety_security,P1
+T011,"The washing machine in the laundry room ate my coins and didn't start.",maintenance_general,P3
+T012,"Fridge in our flat is warm, all our food is going off.",maintenance_general,P2
+T013,"The fuse keeps tripping whenever I use the microwave and hairdryer together.",maintenance_general,P3
+T014,"No power in my whole room since this morning, nothing works",maintenance_general,P1
+T015,"My radiator is stone cold and it's freezing in here at night.",heating_hvac,P2
+T016,"No hot water in the whole of block A since yesterday",heating_hvac,P2
+T017,"There's black mould growing around my window, I think from condensation.",heating_hvac,P3
+T018,"The heating comes on at 6am and it's way too warm, can the timer be changed?",heating_hvac,P3
+T019,"Extractor in the bathroom isn't pulling any air, mirror stays steamed for an hour",heating_hvac,P3
+T020,"I'm locked out of my room, my card is inside. I'm standing in the hallway.",access_keys,P1
+T021,"Lost my key card on the bus, need a replacement please",access_keys,P2
+T022,"My fob stopped working on the main entrance but works on my bedroom door",access_keys,P2
+T023,"Can I get a second key for my parents who are visiting next weekend?",access_keys,P3
+T024,"The bike shed lock is jammed, nobody can get their bikes out",access_keys,P2
+T025,"When is rent due this month? The portal says the 5th but my contract says the 1st.",billing_payments,P3
+T026,"I was charged twice for October rent, please refund one of them. My email is ana.k@gmail.com",billing_payments,P2
+T027,"Can I get a receipt for my deposit for my visa application?",billing_payments,P3
+T028,"My direct debit failed because I changed banks, new IBAN IE29 AIBK 9311 5212 3456 78. How do I update it?",billing_payments,P2
+T029,"Why is there a €50 fee on my statement?",billing_payments,P3
+T030,"When will I get my deposit back? I moved out 6 weeks ago.",billing_payments,P2
+T031,"People in 408 have had loud music every night this week until 3am, I have exams.",noise_conduct,P2
+T032,"My flatmate keeps having friends over who stay for days. Is that allowed?",noise_conduct,P3
+T033,"Someone is smoking in the corridor on floor 2 again.",noise_conduct,P3
+T034,"There is a party going on right now in the common room, it's 2am and very noisy",noise_conduct,P2
+T035,"The guy next door is shouting at his girlfriend and banging on the walls, I'm worried for her",safety_security,P1
+T036,"Bins in the courtyard are overflowing and there are bags on the ground",cleaning_waste,P3
+T037,"I saw a mouse in our kitchen last night, ran under the fridge",cleaning_waste,P2
+T038,"The common room carpet has a big spill on it that nobody cleaned",cleaning_waste,P3
+T039,"Kitchen 4 is filthy, people leave dishes for days. Can housekeeping come more often?",cleaning_waste,P3
+T040,"Where do I put recycling? The blue bin is gone.",cleaning_waste,P3
+T041,"Wifi keeps dropping every 10 minutes in my room, I can't do my online classes",internet_wifi,P2
+T042,"How do I connect my PlayStation to the network? It needs a login page.",internet_wifi,P3
+T043,"No internet at all in block C since lunch",internet_wifi,P2
+T044,"The ethernet port in my room doesn't seem to do anything",internet_wifi,P3
+T045,"Speeds are really slow in the evenings, barely load a video",internet_wifi,P3
+T046,"I arrive on Sunday at 11pm, will reception be open for check-in?",move_in_out,P3
+T047,"I want to move to a bigger room next semester, how do I request a room change?",move_in_out,P3
+T048,"What do I need to do before I move out on the 30th? Is there an inspection?",move_in_out,P3
+T049,"Can I end my contract early? I got a job in Cork.",move_in_out,P3
+T050,"Can you send me a copy of my lease agreement? Phone 087 123 4567",move_in_out,P3
+T051,"Fire alarm going off in block B and nobody is evacuating, is it real??",safety_security,P1
+T052,"I can smell gas near the cookers in kitchen 2",safety_security,P1
+T053,"A man I don't know followed me in through the main door and is wandering the corridors",safety_security,P1
+T054,"My bike was stolen from the shed even though it was locked",safety_security,P2
+T055,"Someone slipped on the wet stairs and hurt their ankle badly",safety_security,P1
+T056,"Smoke alarm in my room beeps every minute, I think the battery is low",safety_security,P2
+T057,"The window in my room won't close properly and there's a draught",maintenance_general,P3
+T058,"My wardrobe door came off its hinge",maintenance_general,P3
+T059,"Hi, just wondering if you have parcels for me? Tracking says delivered.",general_enquiry,P3
+T060,"The lift is stuck on the 4th floor and has been for an hour",maintenance_general,P2
+T061,"The study room door won't open with my card anymore",access_keys,P2
+T062,"Is there any way to get a cheaper room? I'm struggling to pay.",billing_payments,P3
+T063,"There's a weird smell coming from the drains in the bathroom",maintenance_plumbing,P3
+T064,"My room is so cold I'm sleeping in a jacket, the heater does nothing",heating_hvac,P2
+T065,"The people upstairs stomp around at all hours, it's keeping me awake",noise_conduct,P3
+T066,"Can't log in to the wifi portal, it says my account is expired",internet_wifi,P2
+T067,"My key broke in the lock and half of it is stuck inside",access_keys,P2
+T068,"Cockroaches in the shared bathroom on floor 1",cleaning_waste,P2
+T069,"The front door to the building doesn't close fully, anyone could walk in",safety_security,P2
+T070,"Hey my friend is staying over tonight, do I need to register them?",general_enquiry,P3
+T071,"Toilet is overflowing onto the floor and won't stop",maintenance_plumbing,P1
+T072,"Dryer has been broken for two weeks, still no fix",maintenance_general,P2
+T073,"Can I pay rent in two instalments this month?",billing_payments,P3
+T074,"Someone keeps leaving threatening notes on my door",safety_security,P1
+T075,"Hot water runs out after 2 minutes in the morning",heating_hvac,P2
+T076,"I'd like to give feedback, the reception staff were really helpful today!",general_enquiry,P3
+T077,"The microwave in kitchen B smells of burning plastic when it's on",safety_security,P1
+T078,"Room 117 has a leak under the sink, there's a small puddle",maintenance_plumbing,P2
+T079,"The car park barrier isn't lifting for residents",access_keys,P2
+T080,"My ceiling light fell down, the wires are hanging out",maintenance_general,P1

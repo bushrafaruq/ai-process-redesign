@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.venv/
+outputs/audit_log.jsonl
+outputs/eval_audit_log.jsonl
